@@ -1,0 +1,32 @@
+<html>
+<head>
+	<link rel="stylesheet" href="sticky.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+	<h2>Sticky Notes</h2>
+	<div id="wrapper" class="bgOvrly"></div>
+	<header>
+	 <div class="title">
+	 </div>
+	</header>
+
+	<section id="content">
+		<section id="stkyOvrly" class="ovrly hidden">
+      <input type="text" class="txtitle" />
+			<textarea class="txtBox"></textarea>
+			<input id="crteStkyBtn" class="crteBtn btn" type="button" value="Create" />
+			<input id="cnclStkyBtn" class="cnlBtn btn" type="button" value="Cancel" />
+		</section>
+		<input id="addBtn" value="Add Note" type="button" />
+		<input id="clnStorge" value="Clear all Sticky Notes" type="button" />
+		<section>
+			<ul id="stkyNts" class="stkyCntr">
+			</ul>
+		</section>
+	</section>
+
+	<script src="sticky.js"></script>
+</body>
+</html>
