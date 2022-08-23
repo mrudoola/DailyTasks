@@ -1,0 +1,64 @@
+body {
+	background-image: url("zimg.jpg");
+}
+
+.textview
+{
+    display: inline-block;
+	margin: 2px;
+	width: 198px;
+	height: 29px;
+	font-size: 20px;
+}
+
+.equalButton
+{
+    cursor: pointer;
+	display: inline-block;
+	margin: 2px;
+	width: 42px;
+	height:91px;
+    outline: none;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.button {
+    cursor: pointer;
+	display: inline-block;
+	margin: 2px;
+	width: 42px;
+	height: 42px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	outline: none;
+}
+
+.allclearButton
+{
+    border-radius: 10px;
+	color: #FFF;
+    margin: 2px;
+	width: 42px;
+	height: 42px;
+	background-color: #D20000;
+	outline: none;
+}
+
+h1{
+	color:black;
+    text-align: center;
+}
+.container{
+	position:absolute;
+    top:50%;
+    left:50%;
+	transform:translateX(-50%) translateY(-50%)
+}
+#view-history{
+	
+	font-weight: bold;
+	border-radius: 10px;
+	
+}
