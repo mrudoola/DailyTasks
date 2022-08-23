@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Susan Smith",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 5,
+    "location": "Syndey, Australia",
+    "body": "Great experience as a first timer. I barely waited to be helped when I checked in. The staff and the doctors were all very friendly and helpful. "
+  },
+  {
+    "id": 2,
+    "name": "Gabriel",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 5,
+    "location": "London, England",
+    "body": "I especially loved how the doctor really took his time to explain my conditions with me as well as my treatment options."
+  },
+  {
+    "id": 3,
+    "name": "Emily",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 3,
+    "location": "Syndey, Australia",
+    "body": "Great medical office, wonderful and warm experience from start to finish."
+  },
+  {
+    "id": 4,
+    "name": "Mindy",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 4,
+    "location": "Syndey, Australia",
+    "body": "The doctor was terrific. Knowledgeable, sensitive, informative."
+  },
+  {
+    "id": 5,
+    "name": "Alfie",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 5,
+    "location": "London, England",
+    "body": "Great medical office, wonderful and warm experience from start to finish."
+  },
+  {
+    "id": 6,
+    "name": "Camille",
+    "headshot": "https://via.placeholder.com/150",
+    "stars" : 5,
+    "location": "London, England",
+    "body": "Great medical office, wonderful and warm experience from start to finish."
+  }
+]
