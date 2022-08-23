@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion menu</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Accordion Menu</h2>
+
+<button class="accordion">What is an accordion menu?</button>
+<div class="panel">
+  <p>An accordion menu is a vertically stacked list of headers that can be clicked to reveal or hide content associated with them. It is one of many ways you can expose content to users in a progressive manner.</p>
+</div>
+
+<button class="accordion">What is accordion content?</button>
+<div class="panel">
+  <p>The accordion content type is a list of up to five headings which when clicked can expand and collapse to easily reveal and hide additional content.</p>
+</div>
+
+<button class="accordion">What is accordion behavior?</button>
+<div class="panel">
+  <p>Accordion Behavior is ideal for making the most of the available screen space. </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++)
+{
+  acc[i].addEventListener("click", function()
+  {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight)
+    {
+      panel.style.maxHeight = null;
+    } 
+    else
+    {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>s
+</body>
+</html>
