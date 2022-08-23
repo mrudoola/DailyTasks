@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<h1>COUNTER</h1>
+
+		<div = "container">
+			<button onclick="increment()">&#8593;</button>
+			<h2 id="count"></h2>
+			<button onclick="decrement()">&#8595;</button>
+		</div>
+
+		<script>
+			var data = Number(localStorage.getItem('counter'));
+			document.getElementById("count").innerText = data;
+
+			function increment() {
+				data = data + 1;
+				document.getElementById("count").innerText = data;
+				localStorage.setItem('counter',JSON.stringify(data));
+			}
+
+			function decrement() {
+				data = data - 1;
+				document.getElementById("count").innerText = data;
+				localStorage.setItem('counter',JSON.stringify(data));
+			}
+            function resetToZ() {
+                document.getElementById("count").innerText = 0;
+				localStorage.setItem('counter',0);
+            }
+		</script><br><br>
+        
+        <input id="res" type="button" value="Reset" onclick="resetToZ()">
+        
+	</body>
+</html>
