@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PALINDROME CHECKER</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    
+    <div class="block">
+        <span id="title1">PALINDROME CHECKER</span>
+        <input id="inp" type="text" placeholder="Enter a word or a string to check..">
+        <input id="btn" type="button" value="Submit" onclick="submit()">
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        function submit(){
+            var str = document.getElementById("inp").value;
+            var remove = /[^A-Za-z0-9]/g
+            var str1 = str.toLowerCase().replace(remove,'');
+
+            var str2 = str1.split('').reverse().join('');
+
+            if(str1 === str2){
+                document.getElementById('result').innerHTML="It is a Palindrome"
+                document.getElementById('result').style.color="green"
+            }
+            else{
+                document.getElementById('result').innerHTML="Not a Palindrome"
+                document.getElementById('result').style.color="red"
+            }
+        }
+       
+    </script>
+</body>
+</html>
